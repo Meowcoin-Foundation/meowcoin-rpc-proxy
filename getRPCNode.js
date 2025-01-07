@@ -6,7 +6,7 @@ const allNodes = [];
 
 //At startup initialize all RPCs, you can have one or multiple Telestai nodes
 for (const node of config.nodes) {
-  const rpc = TelestaiRPC.getRPC(node.username, node.password, node.raven_url);
+  const rpc = TelestaiRPC.getRPC(node.username, node.password, node.telestai_url);
   allNodes.push({ name: node.name, rpc });
 }
 

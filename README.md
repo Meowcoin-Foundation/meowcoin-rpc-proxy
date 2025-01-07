@@ -1,25 +1,15 @@
-# ravencoin-rpc-proxy
+# telestai-rpc-proxy
 
 ## A Web API for Telestai
 
 **Purpose**: make Telestai blockchain available via HTTP/WEB by exposing the RPC-API via a Proxy that only allows safe procedures.
-
-Check out this software live at https://rpc.ting.finance/
-![image](https://user-images.githubusercontent.com/9694984/226344965-7f01cee1-99ef-4a7f-b9db-8cfce4ccb5e8.png)
-
 
 ## How do I use this software?
 
 When your local proxy is up and running you send requests using HTTP Post.
 The body of the request should contain string **method** and array **params** 
 
-### Examples
-
-### Live examples on Code Pen
-Feel free to fork it and play around
-- Get block count https://codepen.io/RavenRebels/full/jOpmErK
-- Address balances https://codepen.io/RavenRebels/pen/RwBVEbW
-
+### Example for web browser and Node.js 18+
 ### Example for web browser and Node.js 18+
 ```
 //Get block count
@@ -46,7 +36,7 @@ rpc("getaddressbalance", [{ "addresses": ["RXissueSubAssetXXXXXXXXXXXXXWcwhwL"] 
 
 async function rpc(method, params) {
     const data = { method, params };
-    const URL = 'https://rvn-rpc-mainnet.ting.finance/rpc'; //replace with your endpoint
+    const URL = 'https://tls-rpc-mainnet.ting.finance/rpc'; //replace with your endpoint
     const response = await fetch(URL, {
         method: 'POST',
         headers: {
@@ -89,11 +79,11 @@ Configure your setup in ./config.json
       "name": "Node number 1",
       "username": "dauser",
       "password": "dapassword",
-      "raven_url": "http://localhost:8888"
+      "telestai_url": "http://localhost:8888"
     },
     {
       "name": "Nody two tower", 
-      "raven_url": "http://127.0.0.1:8766",
+      "telestai_url": "http://127.0.0.1:8766",
       "password": "supermega2354ergsecret",
       "username": "supermegas3435ecwertwertret"
     }
