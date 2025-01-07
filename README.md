@@ -92,7 +92,7 @@ Configure your setup in ./config.json
 
   ```
 
-### Sir, how should my Raven core node be configured?
+### Sir, how should my telestai core node be configured?
 Here is a recommendation
 ```
 server=1 
