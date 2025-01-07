@@ -1,8 +1,8 @@
 # ravencoin-rpc-proxy
 
-## A Web API for Ravencoin
+## A Web API for Telestai
 
-**Purpose**: make Ravencoin blockchain available via HTTP/WEB by exposing the RPC-API via a Proxy that only allows safe procedures.
+**Purpose**: make Telestai blockchain available via HTTP/WEB by exposing the RPC-API via a Proxy that only allows safe procedures.
 
 Check out this software live at https://rpc.ting.finance/
 ![image](https://user-images.githubusercontent.com/9694984/226344965-7f01cee1-99ef-4a7f-b9db-8cfce4ccb5e8.png)
@@ -71,8 +71,8 @@ According to JSON-RPC 2.0 a request object could contain four attributes, jsonrp
 
 ## How to install
 ```
-git clone https://github.com/ravenrebels/ravencoin-rpc-proxy.git
-cd ravencoin-rpc-proxy
+git clone https://github.com/telestai-project/telestai-rpc-proxy.git
+cd telestai-rpc-proxy
 npm install 
 ```
 
@@ -82,7 +82,7 @@ Configure your setup in ./config.json
 {
   "concurrency": 4,
   "endpoint": "https://rpc.ting.finance/rpc",
-  "environment": "Ravencoin Testnet",
+  "environment": "Telestai Testnet",
   "local_port": 9999,
   "nodes": [
     {
@@ -139,12 +139,12 @@ dbcache=4096
 npm start
 ```
 
-## Help with Ravencoin RPC calls, arguments and stuff
+## Help with Telestai RPC calls, arguments and stuff
 Go to https://rvn-rpc-mainnet.ting.finance/ for in depth description of each RPC call
 ![image](https://user-images.githubusercontent.com/9694984/212323158-6ed00511-cfcc-4338-990c-ebb57f590cf0.png)
 
 
-## List of Ravencoin RPC calls
+## List of Telestai RPC calls
 This is a raw list, a lot of these calls are not whitelisted.
 For example we do NOT let developers call procedure `dumpprivkey`
 ```

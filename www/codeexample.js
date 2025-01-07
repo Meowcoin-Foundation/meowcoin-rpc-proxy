@@ -1,5 +1,5 @@
-const { getRPC, methods } = require("@ravenrebels/ravencoin-rpc");
-//@ravenrebels/ravencoin-rpc believes that username/password is mandatory,
+const { getRPC, methods } = require("@telestai-project/telestai-rpc");
+//@telestai-project/telestai-rpc believes that username/password is mandatory,
 //so just send in whatever
 const username ="whatever";
 const password ="whatever"; 

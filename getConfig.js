@@ -10,7 +10,7 @@ function getConfig() {
     {
         "concurrency": 4,
         "endpoint": "https://rpc.ting.finance/rpc",
-        "environment": "Ravencoin Testnet",
+        "environment": "Telestai Testnet",
         "local_port": 9999,
         "nodes": [
           {
