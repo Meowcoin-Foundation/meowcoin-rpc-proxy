@@ -66,13 +66,13 @@ cd telestai-rpc-proxy
 npm install 
 ```
 
-### Sir, how do I configure this software?
+### How do I configure this software?
 Configure your setup in ./config.json
 ```
 {
   "concurrency": 4,
-  "endpoint": "https://rpc.ting.finance/rpc",
-  "environment": "Telestai Testnet",
+  "endpoint": "https://sub.yourdomain.io/rpc",
+  "environment": "Telestai Mainnet",
   "local_port": 9999,
   "nodes": [
     {
@@ -92,7 +92,7 @@ Configure your setup in ./config.json
 
   ```
 
-### Sir, how should my telestai core node be configured?
+### How should my telestai core node be configured?
 Here is a recommendation
 ```
 server=1 
@@ -123,14 +123,14 @@ rpcallowip=127.0.0.1
 dbcache=4096
 ```
 
-## Sir, how do I start this application?
+## How do I start this application?
 
 ```
 npm start
 ```
 
 ## Help with Telestai RPC calls, arguments and stuff
-Go to https://rvn-rpc-mainnet.ting.finance/ for in depth description of each RPC call
+Go to https://tls-rpc-mainnet.telestai.io/ for in depth description of each RPC call
 ![image](https://user-images.githubusercontent.com/9694984/212323158-6ed00511-cfcc-4338-990c-ebb57f590cf0.png)
 
 
