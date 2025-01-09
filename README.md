@@ -10,7 +10,6 @@ When your local proxy is up and running you send requests using HTTP Post.
 The body of the request should contain string **method** and array **params** 
 
 ### Example for web browser and Node.js 18+
-### Example for web browser and Node.js 18+
 ```
 //Get block count
 rpc("getblockcount", []).then(function (count) {
