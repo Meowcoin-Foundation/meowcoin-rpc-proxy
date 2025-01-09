@@ -36,7 +36,7 @@ rpc("getaddressbalance", [{ "addresses": ["RXissueSubAssetXXXXXXXXXXXXXWcwhwL"] 
 
 async function rpc(method, params) {
     const data = { method, params };
-    const URL = 'https://tls-rpc-mainnet.ting.finance/rpc'; //replace with your endpoint
+    const URL = 'https://tls-rpc-mainnet.telestai.io/rpc'; //replace with your endpoint
     const response = await fetch(URL, {
         method: 'POST',
         headers: {
