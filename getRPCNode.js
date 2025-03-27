@@ -1,12 +1,12 @@
-const TelestaiRPC = require("@telestai-project/telestai-rpc");
+const MeowcoinRPC = require("@meowcoin-foundation/meowcoin-rpc");
 
 const getConfig = require("./getConfig");
 const config = getConfig();
 const allNodes = [];
 
-//At startup initialize all RPCs, you can have one or multiple Telestai nodes
+//At startup initialize all RPCs, you can have one or multiple Meowcoin nodes
 for (const node of config.nodes) {
-  const rpc = TelestaiRPC.getRPC(node.username, node.password, node.telestai_url);
+  const rpc = MeowcoinRPC.getRPC(node.username, node.password, node.meowcoin_url);
   allNodes.push({ name: node.name, rpc });
 }
 

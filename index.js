@@ -1,4 +1,4 @@
-const { methods } = require("@telestai-project/telestai-rpc");
+const { methods } = require("@meowcoin-foundation/meowcoin-rpc");
 const { getRPCNode, getNodes } = require("./getRPCNode");
 const { default: PQueue } = require("p-queue"); //NOTE version 6 with support for CommonJS
 const process = require("process"); //to get memory used
@@ -12,7 +12,7 @@ let numberOfRequests = 0;
 
 /* 
 
-1) All requests to Telestai core node is queued using "p-queue" and run concurrently, you set concurrency in config.json
+1) All requests to Meowcoin core node is queued using "p-queue" and run concurrently, you set concurrency in config.json
 2) Most requests are cached for the lifespan of the CURRENT BLOCK
 
 */

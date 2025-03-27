@@ -1,8 +1,8 @@
-# telestai-rpc-proxy
+# meowcoin-rpc-proxy
 
-## A Web API for Telestai
+## A Web API for Meowcoin
 
-**Purpose**: make Telestai blockchain available via HTTP/WEB by exposing the RPC-API via a Proxy that only allows safe procedures.
+**Purpose**: make Meowcoin blockchain available via HTTP/WEB by exposing the RPC-API via a Proxy that only allows safe procedures.
 
 ## How do I use this software?
 
@@ -35,7 +35,7 @@ rpc("getaddressbalance", [{ "addresses": ["RXissueSubAssetXXXXXXXXXXXXXWcwhwL"] 
 
 async function rpc(method, params) {
     const data = { method, params };
-    const URL = 'https://tls-rpc-mainnet.telestai.io/rpc'; //replace with your endpoint
+    const URL = 'https://tls-rpc-mainnet.meowcoin.io/rpc'; //replace with your endpoint
     const response = await fetch(URL, {
         method: 'POST',
         headers: {
@@ -60,8 +60,8 @@ According to JSON-RPC 2.0 a request object could contain four attributes, jsonrp
 
 ## How to install
 ```
-git clone https://github.com/telestai-project/telestai-rpc-proxy.git
-cd telestai-rpc-proxy
+git clone https://github.com/meowcoin-foundation/meowcoin-rpc-proxy.git
+cd meowcoin-rpc-proxy
 npm install 
 ```
 
@@ -71,18 +71,18 @@ Configure your setup in ./config.json
 {
   "concurrency": 4,
   "endpoint": "https://sub.yourdomain.io/rpc",
-  "environment": "Telestai Mainnet",
+  "environment": "Meowcoin Mainnet",
   "local_port": 9999,
   "nodes": [
     {
       "name": "Node number 1",
       "username": "dauser",
       "password": "dapassword",
-      "telestai_url": "http://localhost:8888"
+      "meowcoin_url": "http://localhost:8888"
     },
     {
       "name": "Nody two tower", 
-      "telestai_url": "http://127.0.0.1:8766",
+      "meowcoin_url": "http://127.0.0.1:8766",
       "password": "supermega2354ergsecret",
       "username": "supermegas3435ecwertwertret"
     }
@@ -91,7 +91,7 @@ Configure your setup in ./config.json
 
   ```
 
-### How should my telestai core node be configured?
+### How should my meowcoin core node be configured?
 Here is a recommendation
 ```
 server=1 
@@ -128,12 +128,12 @@ dbcache=4096
 npm start
 ```
 
-## Help with Telestai RPC calls, arguments and stuff
-Go to https://tls-rpc-mainnet.telestai.io/ for in depth description of each RPC call
+## Help with Meowcoin RPC calls, arguments and stuff
+Go to https://tls-rpc-mainnet.meowcoin.io/ for in depth description of each RPC call
 ![image](https://user-images.githubusercontent.com/9694984/212323158-6ed00511-cfcc-4338-990c-ebb57f590cf0.png)
 
 
-## List of Telestai RPC calls
+## List of Meowcoin RPC calls
 This is a raw list, a lot of these calls are not whitelisted.
 For example we do NOT let developers call procedure `dumpprivkey`
 ```
